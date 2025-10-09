@@ -1,0 +1,406 @@
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(Calculator());
+// }
+
+// class Calculator extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           centerTitle: true,
+//           backgroundColor: Color(0xFFAD1457),
+//           title: Text(
+//             'Calculator',
+//             style: TextStyle(
+//               fontSize: 36.0,
+//             ),
+//           ),
+//         ),
+//         body: Column(
+//           mainAxisAlignment: MainAxisAlignment.end,
+//           children: <Widget>[
+//             // Display Row
+//             Expanded(
+//               flex: 1,
+//               child: Row(
+//                 children: <Widget>[
+//                   Expanded(
+//                     child: Container(
+//                       child: Center(
+//                         child: Text(
+//                           '',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                           textAlign: TextAlign.center,
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                 ],
+//               ),
+//             ),
+
+//             // Row 1
+//             Expanded(
+            
+//               child: Row(
+//                 children: <Widget>[
+//                   Expanded(
+//                     child: Container(
+//                       color: Color(0xFF37474F),
+//                       child: Center(
+//                         child: Text(
+//                           '1',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Color(0xFFFF7043),
+//                       child: Center(
+//                         child: Text(
+//                           '2',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Colors.red,
+//                       child: Center(
+//                         child: Text(
+//                           '3',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Color.fromARGB(255, 14, 211, 47),
+//                       child: Center(
+//                         child: Text(
+//                           '+',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                 ],
+//               ),
+//             ),
+
+//             // Row 2
+//             Expanded(
+//               child: Row(
+//                 children: <Widget>[
+//                   Expanded(
+//                     child: Container(
+//                       color: Color.fromARGB(255, 14, 211, 47),
+//                       child: Center(
+//                         child: Text(
+//                           '4',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Color.fromARGB(255, 155, 228, 39),
+//                       child: Center(
+//                         child: Text(
+//                           '5',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Color.fromARGB(255, 150, 233, 18),
+//                       child: Center(
+//                         child: Text(
+//                           '6',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Color.fromARGB(255, 18, 129, 233),
+//                       child: Center(
+//                         child: Text(
+//                           '-',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                 ],
+//               ),
+//             ),
+
+//             // Row 3
+//             Expanded(
+//               child: Row(
+//                 children: <Widget>[
+//                   Expanded(
+//                     child: Container(
+//                       color: Color.fromARGB(255, 153, 245, 6),
+//                       child: Center(
+//                         child: Text(
+//                           '7',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Color.fromARGB(255, 153, 245, 6),
+//                       child: Center(
+//                         child: Text(
+//                           '8',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Color.fromARGB(255, 153, 245, 6),
+//                       child: Center(
+//                         child: Text(
+//                           '9',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Color.fromARGB(255, 153, 245, 6),
+//                       child: Center(
+//                         child: Text(
+//                           'x',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                 ],
+//               ),
+//             ),
+
+//             // Row 4
+//             Expanded(
+//               child: Row(
+//                 children: <Widget>[
+//                   Expanded(
+//                     child: Container(
+//                       color: Colors.yellow,
+//                       child: Center(
+//                         child: Text(
+//                           '0',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Colors.yellow,
+//                       child: Center(
+//                         child: Text(
+//                           '=',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Colors.yellow,
+//                       child: Center(
+//                         child: Text(
+//                           '/',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                   Expanded(
+//                     child: Container(
+//                       color: Colors.yellow,
+//                       child: Center(
+//                         child: Text(
+//                           '%',
+//                           style: TextStyle(fontSize: 36, color: Colors.white),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                 ],
+//               ),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// version 2
+
+
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(Calculator());
+// }
+
+// class Calculator extends StatelessWidget {
+//   final TextStyle buttonStyle = TextStyle(
+//     fontSize: 28,
+//     color: Colors.white,
+//     fontWeight: FontWeight.w600,
+    
+//   );
+
+//   Widget buildButton(String label, Color color) {
+//   return  Container(
+//   width: 70,
+//   height: 70,
+//   margin: EdgeInsets.all(6),
+//   decoration: BoxDecoration(
+//     color: Colors.blue,
+//     borderRadius: BorderRadius.circular(8),
+//   ),
+//   child: Center(
+//     child: Text('1', style: TextStyle(fontSize: 24, color: Colors.white)),
+//   ),
+// );
+
+//     return Expanded(
+//       child: Container(
+//         margin: EdgeInsets.all(6),
+//         decoration: BoxDecoration(
+//           color: color,
+//           borderRadius: BorderRadius.circular(12),          
+//           boxShadow: [
+//             BoxShadow(
+//               color: Colors.black26,
+//               offset: Offset(2, 2),
+//               blurRadius: 4,
+//             )
+//           ],
+//         ),
+//         child: Center(
+//           child: Text(
+//             label,
+//             style: buttonStyle,
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         backgroundColor: Color(0xFF1E1E1E),
+//         appBar: AppBar(
+//           centerTitle: true,
+//           backgroundColor: Color(0xFF333333),
+//           elevation: 0,
+//           title: Text(
+//             'Calculator',
+//             style: TextStyle(
+//               fontSize: 32,
+//               fontWeight: FontWeight.bold,
+//               color: Colors.white,
+//             ),
+//           ),
+//         ),
+//         body: Column(
+//           mainAxisAlignment: MainAxisAlignment.end,
+//           children: <Widget>[
+//             // Display Row
+//             Expanded(
+              
+//               child: Container(
+//                 alignment: Alignment.bottomRight,
+//                 padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+//                 child: Text(
+//                   '',
+//                   style: TextStyle(
+//                     fontSize: 8,
+//                     color: Colors.red,
+//                     fontWeight: FontWeight.bold,
+//                   ),
+//                 ),
+//               ),
+//             ),
+
+//             // Row 1
+//             Expanded(
+//               child: Row(
+//                 children: <Widget>[
+//                   buildButton('1', Color(0xFF4E5D6A)),
+//                   buildButton('2', Color(0xFF4E5D6A)),
+//                   buildButton('3', Color(0xFF4E5D6A)),
+//                   buildButton('+', Color(0xFFf57c00)),
+//                 ],
+//               ),
+//             ),
+
+//             // Row 2
+//             Expanded(
+//               child: Row(
+//                 children: <Widget>[
+//                   buildButton('4', Color(0xFF4E5D6A)),
+//                   buildButton('5', Color(0xFF4E5D6A)),
+//                   buildButton('6', Color(0xFF4E5D6A)),
+//                   buildButton('-', Color(0xFFf57c00)),
+//                 ],
+//               ),
+//             ),
+
+//             // Row 3
+//             Expanded(
+//               child: Row(
+//                 children: <Widget>[
+//                   buildButton('7', Color(0xFF4E5D6A)),
+//                   buildButton('8', Color(0xFF4E5D6A)),
+//                   buildButton('9', Color(0xFF4E5D6A)),
+//                   buildButton('×', Color(0xFFf57c00)),
+//                 ],
+//               ),
+//             ),
+
+//             // Row 4
+//             Expanded(
+//               child: Row(
+//                 children: <Widget>[
+//                   buildButton('0', Color(0xFF4E5D6A)),
+//                   buildButton('=', Color(0xFF66BB6A)),
+//                   buildButton('÷', Color(0xFFf57c00)),
+//                   buildButton('%', Color(0xFFEF5350)),
+//                 ],
+//               ),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
